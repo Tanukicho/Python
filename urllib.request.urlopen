@@ -1,0 +1,5 @@
+url ="https://www.set.or.th/set/searchtodaynews.do?source=&symbol=&securityType=S&newsGroupId=3&headline=&submit=%E0%B8%84%E0%B9%89%E0%B8%99%E0%B8%AB%E0%B8%B2&language=th&country=TH"
+web = urllib.request.urlopen(url)
+for line in web:
+    line = line.decode()
+    print(line)
